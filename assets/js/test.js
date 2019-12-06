@@ -24,7 +24,7 @@ function setup() {
         console.log('Error: ' + error);
     });
 
-    fetch('/bestCar.json')
+    fetch('./bestCar.json')
     .then(response => {
         if (response.status !== 200) {
             console.log('Error: ' + response.status);
