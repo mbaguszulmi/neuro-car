@@ -8,7 +8,7 @@ let car;
 function setup() {
     createCanvas(1000, 640);
     frameRate(FPS);
-    fetch('/dataJalan.json')
+    fetch('./dataJalan.json')
     .then(response => {
         if (response.status !== 200) {
             console.log('Error: ' + response.status);

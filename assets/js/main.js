@@ -25,23 +25,6 @@ function setup() {
         console.log('Error: ' + error);
     });
 
-    // fetch('./bestCar.json')
-    // .then(response => {
-    //     if (response.status !== 200) {
-    //         console.log('Error: ' + response.status);
-    //         return;
-    //     }
-    //     return response.json();
-    // })
-    // .then(data => {
-    //     for (let i = 0; i < POPULATION; i++) {
-    //         cars.push(new Car(236, 440, true, NeuralNetwork.deserialize(data)));
-    //     }
-    // })
-    // .catch(error => {
-    //     console.log('Error: ' + error);
-    // });
-
     for (let i = 0; i < POPULATION; i++) {
         cars.push(new Car(236, 440, true));
     }
